@@ -10,9 +10,9 @@ namespace MovieTicketBookingAPI.Controllers
     [ApiController]
     public class MovieController : ControllerBase
     {
-        private readonly ISeatService _seatService;
+        private readonly IBookingServices _seatService;
 
-        public MovieController(ISeatService seatService)
+        public MovieController(IBookingServices seatService)
         {
             _seatService = seatService;
         }
